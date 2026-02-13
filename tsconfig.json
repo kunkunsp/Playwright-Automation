@@ -18,13 +18,13 @@
 		"verbatimModuleSyntax": true,
 		"baseUrl": ".", // Punto de partida para las rutas
 		"paths": {
-			"@pages/*": ["Pages/*"],
+			"@pages/*": ["./Pages/*"],
 			"@helper/*": ["./tests/helper/*"],
 			"@data/*": ["./tests/data/*"],
 			"@type/*": ["./tests/type/*"],
 			"@api/*": ["./tests/api/*"],
-			"@TestBase": ["Pages/TestBase.ts"],
-			"@playwrightConfig": ["Pages/playwright.config.ts"]
+			"@TestBase": ["./Pages/TestBase.ts"],
+			"@playwrightConfig": ["./Pages/playwright.config.ts"]
 		}
 	},
 	"exclude": ["node_modules"]
