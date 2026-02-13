@@ -20,7 +20,8 @@ const TEST_BASE_URL = ENVIROMENTS[TEST_ENV];
 export default defineConfig({
 
   	/* Folder for test artifacts such as screenshots, videos, traces, etc. */
-	outputDir: 'test-results/',
+	outputDir: './build/test-results', // Unifica capturas/videos aquí
+	
 
 	// Test Repo Directory:
 	testDir: './',
@@ -45,8 +46,8 @@ export default defineConfig({
 	workers: process.env.CI ? 4 : 1,
 	/* Reporter to use. See https://playwright.dev/docs/test-reporters */
 	reporter: [
-    ['html', { outputFolder: 'test-html-report/main', open: 'never' }], 
-    ['junit', { outputFolder: 'test-junit-report', outputFile: 'test-junit-report/main-importer-report.xml' }], 
+    ['html', { outputFolder: './build/html-report' }], 
+    ['junit', { outputFile: './build/junit/results.xml' }], 
     ],
 	/* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 	use: {
