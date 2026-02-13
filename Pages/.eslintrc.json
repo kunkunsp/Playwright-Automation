@@ -45,7 +45,7 @@
 					["@data", "./tests/data"],
 					["@type", "./tests/interfaces"],
 					["@api", "./tests/apis"],
-					["@TestBase", "./tests/pages/TestBase.ts"],
+					["@TestBase", "./Pages/TestBase.ts"],
 					["@playwrightConfig", "./playwright.config.ts"]
 				],
 				"extensions": [".ts", ".js", ".json"]

@@ -1,11 +1,12 @@
 import { test as driver } from "@playwright/test"; 
-import { LoginPage } from 'Pages/LoginPage';
+import { LoginPage } from '@pages/LoginPage';
 
-driver.extend<{
-    login: LoginPage //login retorna LoginPage 
+const test = driver.extend<{
+    loginPage: LoginPage //login retorna LoginPage 
    // dashboard: DashboardPage 
 }>({
-    login: async ({ page }, use) => await use(new LoginPage(page))
+    loginPage: async ({ page }, use) => await use(new LoginPage(page))
     //dashboard: async ({page}, use) => await use(new DashboardPage(page)),
     //son los parametros de la funcion y => devuelve/retorna el "use"
 });
+export { test };

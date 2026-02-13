@@ -23,7 +23,7 @@ export default defineConfig({
 	outputDir: 'test-results/',
 
 	// Test Repo Directory:
-	testDir: './tests',
+	testDir: './',
 	/* Maximum time one test can run for. */
 	timeout: 40 * 1000,
 	expect: {
@@ -45,16 +45,15 @@ export default defineConfig({
 	workers: process.env.CI ? 4 : 1,
 	/* Reporter to use. See https://playwright.dev/docs/test-reporters */
 	reporter: [
-    ['./tests/custom-reporter.ts'], 
     ['html', { outputFolder: 'test-html-report/main', open: 'never' }], 
     ['junit', { outputFolder: 'test-junit-report', outputFile: 'test-junit-report/main-importer-report.xml' }], 
-    ['allure-playwright']],
+    ],
 	/* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 	use: {
 		/* Base URL to use in actions like `await page.goto('/')`. */
-		baseURL: 'https://opensource-demo.orangehrmlive.com/web/index.php',
+		baseURL: 'https://opensource-demo.orangehrmlive.com',
 		// Headless Mode: true by default
-		headless: true,
+		headless: false,
 		// Viewport Resolution
 		viewport: { width: 1920, height: 1080 },
 		/* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
@@ -68,7 +67,7 @@ export default defineConfig({
 	projects: [
 		{
 			name: 'chromium',
-			use: { ...devices['Desktop Chrome'], channel: 'chrome' }
+			use: { ...devices['Desktop Chrome']}
 		}
 		// {
 		// 	name: 'firefox',

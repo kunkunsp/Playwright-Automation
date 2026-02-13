@@ -1,0 +1,12 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.052279">
+<testsuite name="Pages/e2e/addUserCrededentials.spec.ts" timestamp="2026-02-13T17:43:04.940Z" hostname="chromium" tests="1" failures="0" skipped="0" time="11.132" errors="0">
+<testcase name="Test-admin | Agegar credenciales del usuario › Test-admin:TC1: Credentials" classname="Pages/e2e/addUserCrededentials.spec.ts" time="11.132">
+<system-out>
+<![CDATA[Aun falta
+
+[[ATTACHMENT|../test-results/Pages-e2e-addUserCrededent-a5c6a--Test-admin-TC1-Credentials-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
