@@ -14,7 +14,8 @@ export const test = driver.extend<MyFixtures>({
     },
     addUserPage: async ({ page }, use) => { 
         await use(new AddSystemUserPage(page));
-    },    
+    }, 
+    
 });
 
 // 3. Exportamos el expect original para que no haya conflictos

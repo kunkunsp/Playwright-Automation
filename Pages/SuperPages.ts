@@ -56,6 +56,7 @@ export class SuperPage { // 1. Declaramos las propiedades una sola vez
          return popup;
     }
     async selectDropdownOption(contextElement: Locator, option:string){
+        await contextElement.waitFor({ state: 'visible' });
         await this.optionDropdown(contextElement).click();
         const dropdown = this.dropdown(contextElement);
         await this.expect(dropdown).toBeVisible(); //vamos a esperar que cada elemento sea visible 
