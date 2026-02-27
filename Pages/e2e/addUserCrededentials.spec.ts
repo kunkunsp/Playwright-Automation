@@ -1,4 +1,5 @@
 import { expect, test } from "@TestBase";
+import { faker } from '@faker-js/faker'; 
 
 test.describe("Test-admin | Agegar credenciales de usuario al empleado", ()=>{
 
@@ -10,14 +11,14 @@ test.describe("Test-admin | Agegar credenciales de usuario al empleado", ()=>{
   test('Test-admin:TC1: Shoul add user credentials for employee', async ({ page, addUserPage }) => {
     
     await addUserPage.gotoSaveSystemUser();
-    const expectedUsername = 'NanditoNando';
+    const expectedUsername = faker.internet.username();
     await addUserPage.fillAddUserFields({
       userRole: 'Admin',
-      employeeName: 'William Natalie Bell Luis',
+      employeeName: 'Joseph  Evans',
       status: 'Enabled',
       username: expectedUsername,
-      password: 'NanditoNando12345',
-      confirmPassword: 'NanditoNando12345' 
+      password: 'Password123!',
+      confirmPassword: 'Password123!' 
     });
   
     await expect(page).toHaveURL(/.*viewSystemUsers/, { timeout: 10000 }); // promesa que se realiza - Le damos 10 segundos 

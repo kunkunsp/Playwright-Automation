@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="30.689023000000045">
-<testsuite name="Pages/e2e/addUserCrededentials.spec.ts" timestamp="2026-02-26T15:24:39.790Z" hostname="chromium" tests="1" failures="0" skipped="0" time="29.604" errors="0">
-<testcase name="Test-admin | Agegar credenciales de usuario al empleado › Test-admin:TC1: Shoul add user credentials for employee" classname="Pages/e2e/addUserCrededentials.spec.ts" time="29.604">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="30.918336999999823">
+<testsuite name="Pages/e2e/addUserCrededentials.spec.ts" timestamp="2026-02-27T15:21:30.393Z" hostname="chromium" tests="1" failures="0" skipped="0" time="29.36" errors="0">
+<testcase name="Test-admin | Agegar credenciales de usuario al empleado › Test-admin:TC1: Shoul add user credentials for employee" classname="Pages/e2e/addUserCrededentials.spec.ts" time="29.36">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/Pages-e2e-addUserCrededent-3475e-er-credentials-for-employee-chromium/test-finished-1.png]]
